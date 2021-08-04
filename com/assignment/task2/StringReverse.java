@@ -2,10 +2,10 @@ package com.assignment.task2;
 
 public class StringReverse {
 	public String reverseString(String str) {
-		char word[] = str.toCharArray();
+		char words[] = str.toCharArray();
 		String reverse = "";
-		for (int i=word.length-1;i>=0;i--)  {
-			reverse += word[i];
+		for (int i=words.length-1;i>=0;i--)  {
+			reverse += words[i];
 		}
 		return reverse;
 	}

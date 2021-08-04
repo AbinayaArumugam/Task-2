@@ -3,8 +3,8 @@ import java.util.List;
 import java.util.Arrays;
 
 public class ArrayConversion {
-	public void convertToArrayList(String[] arr6) {
-		List<String> list = Arrays.asList(arr6);
+	public void convertToArrayList(String[] arr1) {
+		List<String> list = Arrays.asList(arr1);
 		System.out.println(list);
 	}
 
