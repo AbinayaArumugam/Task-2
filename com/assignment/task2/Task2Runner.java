@@ -16,7 +16,7 @@ public class Task2Runner {
 				arr[i]= in.nextInt();
 			SecondLargest object1 = new SecondLargest();
 			int output1 = object1.findSecondLargest(arr, arrLength);
-			System.out.println("The Secong Largest number is " + output1);
+			System.out.println("The Second Largest number is " + output1);
 			break;
 		case 2:
 			System.out.println("Enter the array length:");

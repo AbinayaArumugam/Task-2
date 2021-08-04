@@ -36,5 +36,8 @@ public class PatientDetail {
 	public void setContactNo(String contactNo) {
 		this.contactNo = contactNo;
 	}
-
+@Override
+	public String toString() {
+		return name + "\n " + aadharNo + "\n " + age + "\n " + place + "\n " + contactNo;
+	}
 }

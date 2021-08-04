@@ -3,23 +3,18 @@ import java.io.*;
 import java.util.Scanner;
 public class CreateAndReadTextFile {
 	public void CreateFile() {
-		try {
-		File file = new File("Sample.txt");
-		PrintWriter pw = new PrintWriter(file);
+		try (PrintWriter pw = new PrintWriter("Sample.txt")){
 		pw.println("All is Well. Be happy & enjoy the moment");
-		pw.close();
 		} catch (IOException e)  {
 			e.printStackTrace();
 		}
 	}
 
 	public void ReadFile() {
-		try {
-			File file = new File("C:\\Users\\user\\Desktop\\Task2\\Task-2\\Sample.txt");
-			Scanner scan = new Scanner(file);
+		try (Scanner scan = new Scanner(new File("//home//inc1//IdeaProjects//Task-2//Sample.txt"))) {
 			scan.useDelimiter("\\Z");
 			System.out.println(scan.next());
-		} 
+		}
 		catch (Exception e)  {
 			e.printStackTrace();
 		}
